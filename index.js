@@ -20,13 +20,3 @@ app.get("/", (req, res) => {
 });
 
 //Database Connection
-mongoose
-  .connect(
-    "mongodb+srv://pankajabnet:GxTBXtSinFjrbY5K@backenddb.bygddrp.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB"
-  )
-  .then(() => {
-    console.log("Connected to Database");
-  })
-  .catch(() => {
-    console.log("Connected Failed");
-  });
